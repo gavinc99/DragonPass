@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="RegisterController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="897.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dragonpass.project.RegisterController">
+   <children>
+      <AnchorPane prefHeight="79.0" prefWidth="897.0" style="-fx-background-color: #b71c1c;">
+         <children>
+            <Label layoutX="115.0" layoutY="22.0" text="Registration" textFill="#212121">
+               <font>
+                  <Font name="Calibri Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="76.0" fitWidth="64.0" layoutX="54.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/dragon.png" />
+            </image>
+            </ImageView>
+         </children></AnchorPane>
+      <TextField fx:id="usernameTF" layoutX="42.0" layoutY="165.0" prefHeight="25.0" prefWidth="368.0" promptText="Username">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="emailTF" layoutX="42.0" layoutY="218.0" prefHeight="25.0" prefWidth="368.0" promptText="Email" />
+      <PasswordField fx:id="pinTF" layoutX="42.0" layoutY="381.0" prefHeight="25.0" prefWidth="368.0" promptText="Pin" />
+      <Label layoutX="45.0" layoutY="139.0" prefHeight="17.0" prefWidth="62.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="192.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="364.0" text="Verification Pin (1-4 digits)" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="410.0" prefHeight="17.0" prefWidth="88.0" text="Confirm Pin" textFill="#fffefe">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="confirmPinTF" layoutX="42.0" layoutY="427.0" prefHeight="25.0" prefWidth="368.0" promptText="Confirm Pin" />
+      <Button fx:id="registerBtn" layoutX="42.0" layoutY="477.0" mnemonicParsing="false" onAction="#registerBtnAction" prefHeight="37.0" prefWidth="368.0" style="-fx-background-color: #b71c1c;" text="Register">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginBtn" layoutX="42.0" layoutY="526.0" mnemonicParsing="false" onAction="#loginBtnAction" prefHeight="37.0" prefWidth="368.0" style="-fx-background-color: #b71c1c;" text="Login">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="usernameError" layoutX="155.0" layoutY="139.0" prefHeight="17.0" prefWidth="254.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailError" layoutX="213.0" layoutY="201.0" prefHeight="17.0" prefWidth="199.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="257.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="passwordError" layoutX="155.0" layoutY="257.0" prefHeight="17.0" prefWidth="254.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Label>
+      <PasswordField fx:id="passTF" layoutX="42.0" layoutY="278.0" prefHeight="25.0" prefWidth="368.0" promptText="Password" />
+      <PasswordField fx:id="confirmPassTF" layoutX="42.0" layoutY="326.0" prefHeight="25.0" prefWidth="368.0" promptText="Confirm Password" />
+      <Label layoutX="42.0" layoutY="309.0" text="Confirm Password" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cpinError" layoutX="340.0" layoutY="410.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeBtn" layoutX="42.0" layoutY="588.0" mnemonicParsing="false" onAction="#closeBtnAction" prefHeight="37.0" prefWidth="56.0" style="-fx-background-color: #b71c1c;" text="Exit">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="498.0" layoutY="101.0" text="Two Factor Authentication" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="genBtn" layoutX="454.0" layoutY="212.0" mnemonicParsing="false" onAction="#genBtnAction" prefHeight="37.0" prefWidth="88.0" style="-fx-background-color: #b71c1c;" text="Generate">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="secretKey" editable="false" layoutX="549.0" layoutY="212.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="338.0" promptText="Secret Key">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="458.0" layoutY="318.0" prefHeight="40.0" prefWidth="275.0" text="Step 1: Generate a secret key above" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="343.0" prefHeight="40.0" prefWidth="275.0" text="Step 2: Install Google Authenticator" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="373.0" prefHeight="40.0" prefWidth="314.0" text="Step 3: Click &quot;+&quot; in Google Authenticator" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="399.0" prefHeight="40.0" prefWidth="314.0" text="Step 4: Select &quot;Enter a setup key&quot;" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="426.0" prefHeight="40.0" prefWidth="314.0" text="Step 5: Enter &quot;DragonPass&quot; into name" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="455.0" prefHeight="40.0" prefWidth="416.0" text="Step 6: Enter the key above into &quot;Your key&quot; and select &quot;add&quot;" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="513.0" prefHeight="40.0" prefWidth="435.0" text="Note: Ensure you have saved your secret key as you will need " textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="180.0" layoutY="101.0" text="Details" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="32.0" />
+         </font>
+      </Label>
+      <Pane layoutX="427.0" layoutY="78.0" prefHeight="573.0" prefWidth="15.0" style="-fx-background-color: #b71c1c;" />
+      <Label layoutX="458.0" layoutY="533.0" prefHeight="40.0" prefWidth="435.0" text="for logging in!" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="pinMatch" layoutX="179.0" layoutY="409.0" prefHeight="20.0" prefWidth="231.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="tfaError" layoutX="549.0" layoutY="193.0" prefHeight="17.0" prefWidth="338.0" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dragonpass.project.LoginController">
+    <left>
+        <AnchorPane prefHeight="436.0" prefWidth="238.0" style="-fx-background-color: #b71c1c;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="294.0" fitWidth="176.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/dragon.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="86.0" fitWidth="224.0" layoutX="7.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/dragonPass.PNG" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+    </left>
+   <right>
+        <AnchorPane id="passwordTF" maxWidth="1.7976931348623157E308" prefHeight="436.0" prefWidth="587.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="16.0" layoutY="97.0" prefHeight="40.0" prefWidth="83.0" text="Username" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="usernameTF" fx:id="usernameTF" layoutX="109.0" layoutY="104.0" prefHeight="25.0" prefWidth="275.0" />
+                <Label layoutX="16.0" layoutY="179.0" prefHeight="40.0" prefWidth="83.0" text="Pin" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                    </font>
+                </Label>
+                <PasswordField id="pinTF" fx:id="pinTF" layoutX="109.0" layoutY="186.0" prefHeight="25.0" prefWidth="275.0" />
+                <Button fx:id="loginBtn" layoutX="179.0" layoutY="313.0" mnemonicParsing="false" onAction="#loginBtnAction" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #b71c1c;" text="Login">
+                    <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Label fx:id="invalidLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="69.0" prefHeight="29.0" prefWidth="273.0" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="exitB" layoutX="388.0" layoutY="392.0" mnemonicParsing="false" onAction="#exitBAction" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #b71c1c;" text="Exit">
+                    <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                    </font>
+                </Button>
+            <Button fx:id="registerBtn" layoutX="179.0" layoutY="355.0" mnemonicParsing="false" onAction="#registerBtnAction" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: #b71c1c;" text="Register">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="200.0" layoutY="24.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="39.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passTF" layoutX="109.0" layoutY="145.0" prefHeight="25.0" prefWidth="274.0" />
+            <Label fx:id="passLabel" layoutX="16.0" layoutY="149.0" prefHeight="17.0" prefWidth="83.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField id="pinTF" fx:id="tfaTF" layoutX="109.0" layoutY="226.0" prefHeight="25.0" prefWidth="275.0" />
+            <Label layoutX="16.0" layoutY="219.0" prefHeight="40.0" prefWidth="83.0" text="2FA Key" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="251.0" prefHeight="40.0" prefWidth="376.0" text="Note: Google Authenticator must be used to input a 2FA code." textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="271.0" prefHeight="40.0" prefWidth="376.0" text="You will receive a secret key for this code upon registration." textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+   </right>
+</BorderPane>

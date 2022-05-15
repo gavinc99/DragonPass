@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dragonpass.project.MenuController">
+    <left>
+        <AnchorPane prefHeight="436.0" prefWidth="238.0" style="-fx-background-color: #b71c1c;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="294.0" fitWidth="176.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/dragon.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="86.0" fitWidth="224.0" layoutX="7.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/dragonPass.PNG" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+    </left>
+   <center>
+        <AnchorPane id="passwordTF" maxWidth="1.7976931348623157E308" prefHeight="436.0" prefWidth="587.0" style="-fx-background-color: #212121;" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="LOBtn" layoutX="14.0" layoutY="392.0" mnemonicParsing="false" onAction="#LOBtnAction" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #b71c1c;" text="Log Out">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="pManBtn" layoutX="94.0" layoutY="56.0" mnemonicParsing="false" onAction="#pManBtnAction" prefHeight="62.0" prefWidth="274.0" style="-fx-background-color: #b71c1c;" text="Password Manager">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="autoChangeBtn" layoutX="94.0" layoutY="156.0" mnemonicParsing="false" onAction="#autoChangeBtnAction" prefHeight="62.0" prefWidth="274.0" style="-fx-background-color: #b71c1c;" text="Auto-Change">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="lockBtn" layoutX="94.0" layoutY="259.0" mnemonicParsing="false" onAction="#lockBtnAction" prefHeight="62.0" prefWidth="274.0" style="-fx-background-color: #b71c1c;" text="Lock App">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+   </center>
+</BorderPane>
