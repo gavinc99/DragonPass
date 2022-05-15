@@ -31,7 +31,7 @@ The main technologies used in the development and implementation of this project
 #### About This Project - Dragon Pass
 This application was created as my final year software project for Bachelor of Science (Honours) in Computing in National College of Ireland. 
 My selected specialisation is Cyber Security and this application implemetns and follows various secure coding methods, techniques, procedures and algorithms.
-DragonPass is a password manager that acts as a solution to counter password leaks and password cracking methods by dynamically and securely changing user passwords stored within the manager, while still maintaing the usual convenience other password managers have to offer. This unqique feature is called 'Auto-Change' and automizes the password changing process while still maintaing secure procedures and methods.
+DragonPass is a password manager that acts as a solution to counter password leaks and password cracking methods by dynamically and securely changing user passwords stored within the manager, while still maintaing the usual convenience other password managers have to offer. This unqique feature is called 'Auto-Change' and automizes the password changing process while still maintaining secure password protection protocols.
 
 
 The application has been designed to defend against SQL injection, buffer overflow, password cracking methods such as brute force attacks, data leaks, company breaches, phishing attacks and other various vulnerabilities.
