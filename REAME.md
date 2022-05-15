@@ -1,3 +1,6 @@
+## NOTE
+Please follow the below steps before using applcaiton:
+
 ### Database Access
 Localhost database access requires 'user' and 'password' to be configured in config.properties.
 
@@ -9,3 +12,4 @@ Localhost database access requires 'user' and 'password' to be configured in con
 ### The Following Library is required for this application
 * mysql:mysql-connector-java -> Project Structure -> Libraries -> + -> Java -> add mysql-connector in file explorer to the library
 * sqlite-jdbc-3.32.3.2 -> Project Structure -> Libraries -> + -> Java -> add sqlite zip folder to library
+
