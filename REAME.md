@@ -5,5 +5,5 @@ Localhost database access requires 'user' and 'password' to be configured in con
 Add the Javafx lib folder to the project select -> Project Structure -> Libraries -> add java and point to the downloaded javaFx sdk lib folder.
 
 ### The Following Library is required for this application
-* mysql:mysql-connector-java (Can be downloaded form Maven)
+* mysql:mysql-connector-java -> Project Structure -> Libraries -> + -> From Maven -> Search mysql -> Select mysql-connector-java:8.0.28
 * sqlite-jdbc-3.32.3.2
