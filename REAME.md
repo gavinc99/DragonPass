@@ -14,7 +14,7 @@ Localhost database access requires 'user' and 'password' to be configured in con
 * sqlite-jdbc-3.32.3.2 -> Project Structure -> Libraries -> + -> Java -> add sqlite zip folder to library.
 
 ### Test Applications
-The main application is accompanies by 3 test applications that can be used in conjunction with the main application. 
+The main application is accompanied by 3 test applications that can be used in conjunction with the main application. 
 The purpose of these test applications is to demonstrate how the applicaiton would function in a commercial or real life environment.
 
 #### Technologies used
